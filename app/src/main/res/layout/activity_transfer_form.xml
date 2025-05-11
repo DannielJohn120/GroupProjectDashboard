@@ -34,19 +34,20 @@
         android:minHeight="48dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Date:"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp"
+        android:background="#000" />
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Department:"
         android:textSize="16sp"/>
@@ -59,7 +60,7 @@
 
     <!-- Sir/Madam text -->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sir/Madam:"
         android:textStyle="bold"
@@ -74,7 +75,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name of Project:"
         android:textSize="16sp"/>
@@ -85,7 +86,7 @@
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Date and Time Project:"
         android:textSize="16sp"/>
@@ -96,7 +97,7 @@
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Venue:"
         android:textSize="16sp"/>
