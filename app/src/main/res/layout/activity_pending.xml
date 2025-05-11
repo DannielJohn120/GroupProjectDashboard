@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pending_background"
+    android:padding="24dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approved Activity"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:text="Permit To Borrow Request \nAPPROVED "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <TextView android:text="Date:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MM/DD/YYYY"
+        android:minHeight="48dp" />
+
+    <TextView android:text="Department:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. CCIS"
+        android:minHeight="48dp" />
+
+    <TextView android:text="Name of Requesting:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etRequester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Irish Rocha"
+        android:minHeight="48dp" />
+
+    <TextView android:text="Name of Project:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Umak Jam"
+        android:minHeight="48dp" />
+
+    <TextView android:text="Date and Time of Project:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MM/DD/YYYY"
+        android:minHeight="48dp" />
+
+    <TextView android:text="Venue:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Umak Oval"
+        android:minHeight="48dp" />
+
+    <!-- Table Section -->
+    <TextView android:text="Items:"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="#FFFFFF">
+
+        <TableRow>
+            <TextView android:text="Qty" android:textStyle="bold"/>
+            <TextView android:text="Description" android:textStyle="bold"/>
+            <TextView android:text="Date of Transfer" android:textStyle="bold"/>
+            <TextView android:text="From" android:textStyle="bold"/>
+            <TextView android:text="To" android:textStyle="bold"/>
+            <TextView android:text="Date of Return" android:textStyle="bold"/>
+            <TextView android:text="Remarks" android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/etQty"
+                android:hint="2"
+                tools:ignore="TouchTargetSizeCheck"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etDesc"
+                android:hint="Farlight"
+                tools:ignore="TouchTargetSizeCheck"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etTransfer"
+                android:hint="05/13/2025"
+                tools:ignore="TouchTargetSizeCheck"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etFrom"
+                android:hint=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etTo"
+                android:hint=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etReturn"
+                android:hint="05/15/2025"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etRemarks"
+                android:hint=""
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:text="APPROVED BY:"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etApprover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. EFREN KIM MENDOZA"
+        android:minHeight="48dp"
+        android:textColor="#000000"/>
+
+</LinearLayout>

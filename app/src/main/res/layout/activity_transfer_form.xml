@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/user_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="User Form"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter your name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter your email"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginBottom="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department:"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginBottom="12dp"/>
+
+
+    <!-- Sir/Madam text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sir/Madam:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I would like to request for the following items:"
+        android:textSize="14sp"
+        android:paddingBottom="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Project:"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time Project:"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue:"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginBottom="24dp"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="#FFFFFF"
+        android:padding="4dp">
+
+
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="Qty" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="2" android:text="Description" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="2" android:text="Date of Transfer" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="1" android:text="From" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="1" android:text="To" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="2" android:text="Date of Return" android:padding="4dp" android:textStyle="bold"/>
+            <TextView android:layout_weight="2" android:text="Remarks" android:padding="4dp" android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow>
+
+            <EditText
+                android:layout_weight="1"
+                android:hint="Q"
+                android:minHeight="48dp"
+                android:padding="4dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_weight="2"
+                android:hint="Desc"
+                android:minHeight="48dp"
+                android:padding="4dp" />
+
+            <EditText
+                android:layout_weight="2"
+                android:hint="MM/DD"
+                android:minHeight="48dp"
+                android:padding="4dp" />
+
+            <EditText
+                android:layout_weight="1"
+                android:hint="From"
+                android:padding="4dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_weight="1"
+                android:hint="To"
+                android:padding="4dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_weight="2"
+                android:hint="MM/DD"
+                android:minHeight="48dp"
+                android:padding="4dp" />
+            <EditText android:layout_weight="2" android:hint="Remarks" android:padding="4dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+</LinearLayout>
+
